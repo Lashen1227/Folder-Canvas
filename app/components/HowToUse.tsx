@@ -38,6 +38,26 @@ export function HowToUse() {
                   <h2 className='text-lg font-semibold text-zinc-800 mb-4'>How to Use FolderCanvas</h2>
                   <ol className='list-decimal text-zinc-600 space-y-3 pl-5'>
                      <li>
+                        <span className='font-medium'>Pick an Icon:</span> Select from the available icons below the
+                        input bar (e.g., GitHub, Vercel, React, Tailwind, VSCode, etc.).
+                     </li>
+                     <li>
+                        <span className='font-medium'>Adjust Icon Color:</span> Click "Adjust icon color" to open the
+                        color picker and fine-tune the icon's appearance.
+                     </li>
+                     <li>
+                        <span className='font-medium'>Upload Custom Icon (Optional):</span> Use the "Custom Icon" button
+                        to upload your own SVG or PNG icon if preferred.
+                     </li>
+                     <li>
+                        <span className='font-medium'>Preview Your Folder:</span> See the changes reflected instantly in
+                        the large folder preview on the right.
+                     </li>
+                     <li>
+                        <span className='font-medium'>Download the Icon:</span> Once satisfied, click the black
+                        "Download" button to get your customized folder icon.
+                     </li>
+                     <li>
                         <span className='font-medium'>Developed by:</span>{' '}
                         <a
                            href='https://github.com/Lashen1227'
@@ -48,7 +68,6 @@ export function HowToUse() {
                            Lashen Martino
                         </a>
                      </li>
-                     {/* Add additional instructions here */}
                   </ol>
                </div>
             </div>
