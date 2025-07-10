@@ -42,11 +42,11 @@ export function HowToUse() {
                         input bar (e.g., GitHub, Vercel, React, Tailwind, VSCode, etc.).
                      </li>
                      <li>
-                        <span className='font-medium'>Adjust Icon Color:</span> Click "Adjust icon color" to open the
-                        color picker and fine-tune the icon's appearance.
+                        <span className='font-medium'>Adjust Icon Color:</span> Click &quot;Adjust icon color&quot; to open the
+                        color picker and fine-tune the icon&apos;s appearance.
                      </li>
                      <li>
-                        <span className='font-medium'>Upload Custom Icon (Optional):</span> Use the "Custom Icon" button
+                        <span className='font-medium'>Upload Custom Icon (Optional):</span> Use the &quot;Custom Icon&quot; button
                         to upload your own SVG or PNG icon if preferred.
                      </li>
                      <li>
@@ -55,7 +55,7 @@ export function HowToUse() {
                      </li>
                      <li>
                         <span className='font-medium'>Download the Icon:</span> Once satisfied, click the black
-                        "Download" button to get your customized folder icon.
+                        &quot;Download&quot; button to get your customized folder icon.
                      </li>
                      <li>
                         <span className='font-medium'>Developed by:</span>{' '}
