@@ -7,8 +7,6 @@ import { useRef } from 'react'
 import { devIcons } from './defaultIcons'
 import { updateIconColor } from '@/utils/icons/consts'
 
-let pageTheme = 'dark'
-
 export function Configuration({
    configuration,
    onChangeConfig,
@@ -26,36 +24,18 @@ export function Configuration({
       }
    }
 
-   function changePageTheme() {
-      if (pageTheme !== 'dark') {
-         // select body and change the theme
-         document.querySelector('main')!.classList.add('dark')
-         pageTheme = 'dark'
-      } else {
-         document.querySelector('main')!.classList.remove('dark')
-         pageTheme = 'light'
-      }
-   }
-
    function colorChange(e: React.ChangeEvent<HTMLInputElement>) {
-      // separate the color into rgb
       const color = e.target.value
       const red = parseInt(color.slice(1, 3), 16)
       const green = parseInt(color.slice(3, 5), 16)
       const blue = parseInt(color.slice(5, 7), 16)
 
-      // console.log(red, green, blue)
-
-      // update the IconColor
       updateIconColor(red, green, blue)
       refresh()
-
-      // update the configuration color
       onChangeConfig('color', color)
-      }
+   }
 
-   function refresh () {
-      // update the icon by re-generating the preview
+   function refresh() {
       onChangeConfig('icon', configuration.icon)
    }
 
@@ -77,9 +57,7 @@ export function Configuration({
                const files = e.target.files
                const file = files ? files[0] : null
 
-               if (!file) {
-                  return
-               }
+               if (!file) return
 
                onChangeConfig('icon', file)
             }}
@@ -90,11 +68,8 @@ export function Configuration({
             className='h-10 border border-zinc-200 rounded-md px-3 py-2 w-full appearance-none cursor-pointer'
             value={configuration.color}
             title='Pick a color'
-            onChange={(e) => {
-               colorChange(e)
-            }}
+            onChange={colorChange}
          />
-         
 
          <select
             className='h-10 border border-zinc-200 rounded-md px-3 py-2 w-full appearance-none cursor-pointer'
@@ -131,22 +106,18 @@ export function Configuration({
             })}
          </ul>
 
-         <Button variant='outlined' className='w-full mt-auto' onClick={() => changePageTheme()}>
+         {/* Push buttons to bottom */}
+         <div className='mt-auto flex flex-col gap-3'>
+            <Button variant='outlined' className='w-full' onClick={openFileExporer}>
+               <FolderIcon className='h-5 w-5 stroke-2' />
+               <span>Custom Icon</span>
+            </Button>
 
-            <span>Change Theme</span>
-
-         </Button>
-
-         <Button variant='outlined' className='w-full' onClick={() => openFileExporer()}>
-            <FolderIcon className='h-5 w-5 stroke-2' />
-            <span>Custom Icon</span>
-         </Button>
-
-         <Button className='w-full' onClick={() => downloadFile()}>
-            <DownloadIcon className='h-5 w-5 stroke-2' />
-
-            <span>Download</span>
-         </Button>
+            <Button className='w-full' onClick={downloadFile}>
+               <DownloadIcon className='h-5 w-5 stroke-2' />
+               <span>Download</span>
+            </Button>
+         </div>
       </aside>
    )
 }

@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Folder Canvas
+
+A platform to create and customize folder icons for a personalized desktop experience on PC. Built with Next.js, TypeScript, and Vercel, Folder Canvas allows you to select icons, adjust colors, and even upload custom icons to create the perfect folder look.
+
+---
+
+## Features
+
+- 🎨 **Icon Selection:** Choose from a set of developer-centric icons (GitHub, Vercel, React, Tailwind, VSCode, and more).
+- 🌈 **Color Customization:** Easily adjust icon colors using an intuitive color picker.
+- 🖼️ **Custom Icons:** Upload your own SVG or PNG icon for a unique folder look.
+- ⚡ **Live Preview:** Instantly preview your folder icon before downloading.
+- 📥 **One-Click Download:** Download your customized folder icon in seconds.
+- 🖥️ **Modern UI:** Built with Next.js and TypeScript for a fast, responsive web experience.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+To run Folder Canvas locally:
 
 ```bash
+npm install
 npm run dev
 # or
+yarn install
 yarn dev
 # or
+pnpm install
 pnpm dev
 # or
+bun install
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
+
+## How to Use Folder Canvas
+
+1. **Pick an Icon:** Select from the available icons below the input bar (e.g., GitHub, Vercel, React, Tailwind, VSCode, etc.).
+2. **Adjust Icon Color:** Click "Adjust icon color" to open the color picker and fine-tune the icon's appearance.
+3. **Upload Custom Icon (Optional):** Use the "Custom Icon" button to upload your own SVG or PNG icon if preferred.
+4. **Preview Your Folder:** See changes reflected instantly in the large folder preview.
+5. **Download the Icon:** Once satisfied, click the "Download" button to get your customized folder icon.
+
+---
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
+- [Vercel Platform](https://vercel.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+## Developed by
+
+[Lashen Martino](https://github.com/Lashen1227)
